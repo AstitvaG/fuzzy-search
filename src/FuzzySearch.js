@@ -60,7 +60,7 @@ export default class FuzzySearch {
       results.sort((a, b) => a.score - b.score);
     }
 
-    return results.map(result => result.item);
+    return results;
   }
 
   static isMatch(item, query, caseSensitive) {
